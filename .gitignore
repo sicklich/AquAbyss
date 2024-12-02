@@ -1,0 +1,32 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+ #自动生成的插件文件
+[Aa]ssets/Plugins/[^rR]*/[^Mm]*/[^D].*
+[Uu]sersettings/
+# Visual Studio 代码IDE配置文件
+.vscode/
+# Rider IDE配置文件
+.idea/
+
+# 直接包含的 DLL 文件
+*.dll
+*.exe
+*.so
+*.dylib
+*.tmp
+*.pidb
+*.pdb
+*.mdb
+*.suo
+*.user
+*.ttf
+*.DS_Store
+
+# Unity3D 自动生成的文件夹
+[Aa]ssets/AssetStoreTools*
+
+[Aa]ssets/StreamingAssets
