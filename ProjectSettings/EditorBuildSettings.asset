@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Views/StartMenu.unity
+    guid: 343466deaf3b635409d43abb8603d433
+  - enabled: 1
+    path: Assets/Scenes/Views/GameProgress.unity
+    guid: 3beea3ab99f2b0141a72aaf4101033c1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
