@@ -9,7 +9,24 @@ public class ButtonIconController : MonoBehaviour
     private Image image_origin; // 按钮内部的 Image 组件
     public Sprite image_off; // Off图片
     public Sprite image_on; // On图片
-    private bool isButtonOn = false; // 跟踪当前显示的图片
+    // public bool isButtonOn = false; // 跟踪当前显示的图片
+
+    private bool _isButtonOn;
+    public bool isButtonOn
+    {
+        get => _isButtonOn;
+        set
+        {
+            if (_isButtonOn != value)
+            {
+                _isButtonOn = value;
+                OnButtonStateChanged?.Invoke(_isButtonOn); // 触发事件
+            }
+        }
+    }
+
+    // 定义状态改变事件
+    public event System.Action<bool> OnButtonStateChanged;
 
     void Start()
     {
